@@ -1,5 +1,6 @@
 #!/bin/bash
 
+service redis-server stop
 redis-server redis.conf
 ./horizon.d start
 ./analyzer.d start
